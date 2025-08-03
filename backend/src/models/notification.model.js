@@ -27,12 +27,12 @@ const notificationSchema = new mongoose.Schema(
       ref: "Comment",
       default: null,
     },
-    validate:{
-      validator: function(){
-        return this.content || this.image;
-      },
-      message: 'Post must have either content or image'
-    },
+    // validate:{
+    //   validator: function(){
+    //     return this.content || this.image;
+    //   },
+    //   message: 'Post must have either content or image'
+    // },
   },
   { timestamps: true }
 );
